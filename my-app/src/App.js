@@ -13,14 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import {Helmet} from 'react-helmet';
-import {black} from "color-name";
+import  { useState } from 'react';
 
-
-
-function mailTo(e) {
-  e.preventDefault();
-  window.open ("mailto:andrewaopio@abc.com?subject=Airforce&body=hello");
-}
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -44,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [location, setLocation] = useState("");
   const classes = useStyles();
   return (
     <div className="App">
@@ -66,8 +64,9 @@ function App() {
                 fullWidth
                 id="email"
                 label="First Name"
-                name="email"
-                autoComplete="email"
+                name="First Name"
+                autoComplete="First Name"
+                onChange={event => setFirstName(event.target.value)}
                 autoFocus
             />
             <TextField
@@ -78,8 +77,9 @@ function App() {
                 fullWidth
                 id="email"
                 label="Last Name"
-                name="email"
-                autoComplete="email"
+                name="Last Name"
+                autoComplete="Last Name"
+                onChange={event => setLastName(event.target.value)}
                 autoFocus
             />
             <TextField
@@ -90,8 +90,9 @@ function App() {
                 fullWidth
                 id="email"
                 label="Location"
-                name="email"
-                autoComplete="email"
+                name="Location"
+                autoComplete="Location"
+                onChange={event => setLocation(event.target.value)}
                 autoFocus
             />
             <TextField
@@ -102,8 +103,9 @@ function App() {
                 fullWidth
                 id="email"
                 label="Email Address"
-                name="email"
-                autoComplete="email"
+                name="Email Address"
+                autoComplete="Email Address"
+                onChange={event => setEmail(event.target.value)}
                 autoFocus
             />
             <Button
@@ -112,6 +114,7 @@ function App() {
                 variant="contained"
                 color="primary"
                 className={classes.submit}
+                onClick={mailTo1}
             >
               Send Email to Govornor A
             </Button>
@@ -120,6 +123,7 @@ function App() {
                 fullWidth
                 variant="contained"
                 color="primary"
+                onClick={mailTo2}
                 className={classes.submit}
             >
               Send Email to Govornor B
@@ -129,7 +133,7 @@ function App() {
                 fullWidth
                 variant="contained"
                 color="primary"
-                onClick={mailTo}
+                onClick={mailTo3}
                 className={classes.submit}
             >
               Send Email to Govornor C
@@ -142,6 +146,19 @@ function App() {
 
     </div>
   );
+  function mailTo3(e) {
+    e.preventDefault();
+    window.open ("mailto:governor@gmail.com?subject=BLM!&body="+firstName+"");
+  }
+
+  function mailTo2(e) {
+    e.preventDefault();
+    window.open ("mailto:governor@gmail.com?subject=BLM!&body="+firstName+"");
+  }
+  function mailTo1(e) {
+    e.preventDefault();
+    window.open ("mailto:governor@gmail.com?subject=BLM!&body="+firstName+"");
+  }
 }
 
 export default App;
