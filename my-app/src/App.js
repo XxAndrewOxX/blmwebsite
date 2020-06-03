@@ -130,7 +130,7 @@ function App() {
   );
   function mailTo3(e) {
     e.preventDefault();
-    window.open ("mailto:police@minneapolismn.gov?bcc=minneapolis311@minneapolismn.gov; ‎citizeninfo@hennepin.us; ‎info@mpdfederation.com;?subject=Justice for George Floyd&body=Hello, %0D%0A%0D%0A" +
+    window.open ("mailto:police@minneapolismn.gov?bcc=minneapolis311@minneapolismn.gov; ‎citizeninfo@hennepin.us; ‎info@mpdfederation.com;&subject=Justice for George Floyd&body=Hello, %0D%0A%0D%0A" +
         "\n\n" +
         "My name is "+firstName+" "+lastName+". I am a resident of "+location+" and I am emailing today to demand accountability for the racist murder of George Floyd.\n%0D%0A%0D%0A" +
         "\n" +
@@ -161,7 +161,7 @@ function App() {
   }
   function mailTo1(e) {
     e.preventDefault();
-    window.open ("mailto:governor@gmail.com?subject=Justice for David McAtee&body=To Whom it may Concern,%0D%0A%0D%0A\n" +
+    window.open ("mailto:Greg.Fischer@louisvilleky.gov?subject=Justice for David McAtee&body=To Whom it may Concern,%0D%0A%0D%0A\n" +
         "\n" +
         "My name is "+firstName+" "+lastName+", and I am from "+location+". I am emailing you to demand accountability for the recent and racially charged murder of David McAtee. %0D%0A%0D%0A\n" +
         "\n" +
