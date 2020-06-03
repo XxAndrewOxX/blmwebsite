@@ -53,8 +53,8 @@ function App() {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-            <Avatar className={classes.avatar} alt="Black Power" src="blkpower.jpg" />
-          <Typography component="h1" variant="h5">
+            <Avatar className={classes.avatar} alt="Black Power" src="https://www.urbanprofile.com/images/products/secondary/black_power_fist_ladies_style-1.jpg" />
+          <Typography component="h1" variant="h5" color='textSecondary'>
             Enter Your Information
           </Typography>
           <form className={classes.form} noValidate>
