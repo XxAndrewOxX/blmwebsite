@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {lightcoral} from "color-name";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode style = {{backgroundColor: lightcoral}} >
     <App />
   </React.StrictMode>,
   document.getElementById('root')
