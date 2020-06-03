@@ -130,7 +130,7 @@ function App() {
   );
   function mailTo3(e) {
     e.preventDefault();
-    window.open ("googlegmail:///co?to=police@minneapolismn.gov& bcc=minneapolis311@minneapolismn.gov; ‎citizeninfo@hennepin.us; ‎info@mpdfederation.com &subject=Justice for George Floyd&body=Hello, %0D%0A%0D%0A" +
+    window.open ("googlegmail:///co?to=police@minneapolismn.gov &bcc=minneapolis311@minneapolismn.gov, ‎citizeninfo@hennepin.us, ‎info@mpdfederation.com &subject=Justice for George Floyd&body=Hello, %0D%0A%0D%0A" +
         "\n\n" +
         "My name is "+firstName+" "+lastName+". I am a resident of "+location+" and I am emailing today to demand accountability for the racist murder of George Floyd.\n%0D%0A%0D%0A" +
         "\n" +
