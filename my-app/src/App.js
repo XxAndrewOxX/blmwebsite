@@ -52,7 +52,7 @@ function App() {
               </h1>
               <p style={{fontSize: 13 , color: "white", textAlign: 'center'}}>
                 Enter your name and where you're from and this website will send emails to local officials in cities where police brutality has recently occurred.
-                Each button will take you to into your email app with a pre-written email asking for justice for that particular person. This site will be updated as cases are brought to the news. This is the first step to systematic change. This app was created by Thomas Hodge (ththodge@gmail.com), Andrew Opio (@andrewaopio@gmail.com), and Will Hodge (whodge99@gmail.com).
+                Each button will take you to your email app with a pre-written email asking for justice for that particular person. This site will be updated as cases are brought to the news. This is the first step to systematic change. This app was created by Thomas Hodge (ththodge@gmail.com), Andrew Opio (@andrewaopio@gmail.com), and Will Hodge (whodge99@gmail.com).
 
               </p>
             </div>
@@ -106,16 +106,7 @@ function App() {
               >
                 Justice for Breonna Taylor
               </Button>
-              <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  style={{ color: "white", backgroundColor: "#234B05", borderRadius: 20, opacity: .9 }}
-                  className={classes.submit}
-                  onClick={mailTo3}
-              >
-                Justice for George Floyd
-              </Button>
+
               <Button
                   type="submit"
                   fullWidth
